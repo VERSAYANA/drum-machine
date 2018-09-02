@@ -12,5 +12,4 @@
 }
 .pressed {
   background-color: var(--board-color);
-  /* box-shadow: none; */
 }

@@ -11,14 +11,10 @@
   grid-template: repeat(3, 64px) / repeat(3, 64px);
   grid-gap: 16px;
   justify-items: center;
-  /* background-color: aqua; */
 }
 #panel {
-  /* background-color: var(--pad-color); */
   display: flex;
   justify-content: center;
-  /* width: 200px; */
-  /* padding-left: 64px; */
   box-sizing: border-box;
 }
 #display {

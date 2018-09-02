@@ -13,13 +13,6 @@ class Pad extends Component {
   componentDidMount() {
     document.addEventListener('keyup', this.handleKeyPress);
   }
-  // componentDidUpdate(nextProps, nextState) {
-  //   if (nextState.pressed === true) {
-  //     this.setState({
-  //       pressed: false,
-  //     });
-  //   }
-  // }
   handleKeyPress(e) {
     if (this.props.code === e.keyCode) {
       this.playAudio();
@@ -39,13 +32,16 @@ class Pad extends Component {
   render() {
     return (
       <div
+        id={this.props.display}
         className={this.state.pressed ? 'drum-pad pressed' : 'drum-pad '}
         onClick={this.playAudio}
       >
         {this.props.keyText}
-        <audio id={this.props.keyText}>
-          <source src={this.props.audio} />
-        </audio>
+        <audio
+          className="clip"
+          id={this.props.keyText}
+          src={this.props.audio}
+        />
       </div>
     );
   }
