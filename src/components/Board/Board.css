@@ -1,0 +1,14 @@
+#drum-machine {
+  box-sizing: border-box;
+  background-color: var(--board-color);
+  padding: 64px;
+  box-shadow: var(--shadow-4dp);
+}
+
+#pad {
+  display: grid;
+  grid-template: repeat(3, 64px) / repeat(3, 64px);
+  grid-gap: 16px;
+  justify-items: center;
+  /* background-color: aqua; */
+}
