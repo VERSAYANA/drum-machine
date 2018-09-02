@@ -1,14 +1,34 @@
 #drum-machine {
   box-sizing: border-box;
   background-color: var(--board-color);
-  padding: 64px;
+  padding: 32px;
   box-shadow: var(--shadow-4dp);
+  display: flex;
+  flex-direction: column;
 }
-
 #pad {
   display: grid;
   grid-template: repeat(3, 64px) / repeat(3, 64px);
   grid-gap: 16px;
   justify-items: center;
   /* background-color: aqua; */
+}
+#panel {
+  /* background-color: var(--pad-color); */
+  display: flex;
+  justify-content: center;
+  /* width: 200px; */
+  /* padding-left: 64px; */
+  box-sizing: border-box;
+}
+#display {
+  width: 100%;
+  margin-bottom: 32px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: var(--pad-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
 }

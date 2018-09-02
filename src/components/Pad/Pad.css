@@ -10,3 +10,7 @@
   box-shadow: var(--shadow-4dp);
   cursor: pointer;
 }
+.pressed {
+  background-color: var(--board-color);
+  /* box-shadow: none; */
+}
